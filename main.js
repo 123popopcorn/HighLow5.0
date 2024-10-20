@@ -5,7 +5,7 @@ document.getElementById('myForm').onsubmit = function(event) {
   const paypayLink = document.getElementById('paypayLink').value;
 
   // PythonのFlaskサーバーのエンドポイントにデータを送信
-  fetch('http://localhost:5000/process_purchase', {
+  fetch('https://paypayreceive.onrender.com/process_purchase', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
