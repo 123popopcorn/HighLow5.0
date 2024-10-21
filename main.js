@@ -49,3 +49,28 @@ window.onclick = function(event) {
     modal.style.display = 'none';
   }
 };
+
+document.getElementById('myForm').addEventListener('submit', function(event) {
+  var submitButton = document.querySelector('.formbold-btn');
+  var overlay = document.createElement('div');
+  
+  // ボタンを無効化して連続クリックを防止
+  submitButton.disabled = true;
+  submitButton.value = '処理中...';
+
+  // 簡易的な待機画面の表示
+  overlay.style.position = 'fixed';
+  overlay.style.top = '0';
+  overlay.style.left = '0';
+  overlay.style.width = '100%';
+  overlay.style.height = '100%';
+  overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+  overlay.style.color = '#fff';
+  overlay.style.display = 'flex';
+  overlay.style.justifyContent = 'center';
+  overlay.style.alignItems = 'center';
+  overlay.style.fontSize = '18px';
+  overlay.innerHTML = '処理中です。しばらくお待ちください...';
+
+  document.body.appendChild(overlay);
+});

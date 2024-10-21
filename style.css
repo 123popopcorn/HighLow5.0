@@ -50,17 +50,29 @@ body {
 .formbold-form-title {
   margin-bottom: 30px;
 }
-.formbold-form-title h2 {
-  font-weight: 600;
-  font-size: 28px;
+.formbold-form-title h1 {
   line-height: 34px;
   color: #fff;
+  margin-bottom: 30px;
 }
 .formbold-form-title p {
   font-size: 16px;
   line-height: 24px;
-  color: #ff0000;
+  color: #fff;
   margin-top: 12px;
+}
+.price-wrapper {
+  text-align: right;
+}
+.price {
+  display: inline-flex;
+  justify-content: flex-end;
+  border: 2px solid #f9bf2b; /* 枠線の色と太さを指定 */
+  border-radius: 8px; /* 角丸の半径を指定 */
+  padding: 7.5px; /* 内側の余白を指定 */
+  margin: 0;
+  color: #f9bf2b;
+  font-size: 16px;
 }
 .formbold-input-flex {
   display: flex;
@@ -144,6 +156,7 @@ body {
   color: #232323;
   cursor: pointer;
   margin-top: 25px;
+  margin-top: 40px;
   transition: background 0.3s ease;
 }
 .formbold-btn:hover {
